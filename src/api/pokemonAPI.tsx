@@ -1,5 +1,6 @@
 import axios from "axios"
+import { api } from "../shared/constants/api"
 
 export const pokemonAPI = axios.create({
-  baseURL : 'https://pokeapi.co/api/v2'
+  baseURL : api().url.base,
 })

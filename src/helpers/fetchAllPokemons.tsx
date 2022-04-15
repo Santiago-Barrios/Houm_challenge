@@ -27,6 +27,5 @@ const transformSmallPokemonToPokenon = ( smallPokemonList: SmallPokemon[] ) : Po
         }
     } );
 
-    console.log(pokemonArr);
     return pokemonArr;
 }
