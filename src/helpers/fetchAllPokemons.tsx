@@ -4,7 +4,7 @@ import { FetchAllPokemonResponse, Pokemon, SmallPokemon } from '../interfaces/fe
 
 export const fetchAllPokemons = async () : Promise<Pokemon[]> => {
 
-    const resp = await pokemonAPI.get<FetchAllPokemonResponse>('/pokemon?limit=500');
+    const resp = await pokemonAPI.get<FetchAllPokemonResponse>('/pokemon?limit=1500');
     const smallPokemenList = resp.data.results;
 
     return transformSmallPokemonToPokenon( smallPokemenList );
