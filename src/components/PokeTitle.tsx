@@ -11,8 +11,8 @@ export const PokeTitle: FC< Props > = ({ title }) => {
 
   return (
     <>
-    <h1 style={clases.colorOrange} > { title } </h1>
-    <hr style={{color: "red"}} />
+    <h1 style={clases.title} > { title } </h1>
+    <hr style={clases.titleLine} />
     </>
   )
 }

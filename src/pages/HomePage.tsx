@@ -4,12 +4,15 @@ import { PokemonList } from "../components/PokemonList";
 import { PokeTitle } from "../components/PokeTitle";
 import { usePokemon } from "../hooks/usePokemon";
 import { Pokemon } from "../interfaces/fetchAllPokemonResponse";
+import { useStyles } from '../shared/styles/useStyles';
 
 export const HomePage = () => {
 
   const { isLoading, pokemons } = usePokemon();
   const [currentPage, setcurrentPage] = useState(0);
   const [search, setSearch] = useState('');
+
+  const clases = useStyles();
 
   const filterPokemons = (): Pokemon[] => {
 
@@ -46,9 +49,9 @@ export const HomePage = () => {
             value={ search }
             onChange={ onSearchChange }
         />
-      <button className="btn mb-3" onClick={ previousPage } >Previous</button>
+      <button className="btn mb-3" style={ clases.button }  onClick={ previousPage }>Previous</button>
       &nbsp;
-      <button className="btn mb-3" onClick={ nextPage }>Next</button>
+      <button className="btn mb-3" style={ clases.button } onClick={ nextPage }>Next</button>
       <PokemonList pokemonList={filterPokemons()} />
       {isLoading && <Loading />}
     </>
