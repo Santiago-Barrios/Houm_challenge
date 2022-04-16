@@ -7,7 +7,7 @@ export const PokeCard = (pokemon: Pokemon) => {
 
   return (
     <div className="col mb-2">
-      <div className="card">
+      <div className="card animate__animated animate__fadeIn ">
         <div className="row no-gutters">
           <div className="col-12">
             <img src={pokemon.pic} className="card-img" alt={pokemon.name} />
