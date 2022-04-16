@@ -14,7 +14,7 @@ export const useStyles = () => {
       textShadow: "-1px -1px white, 1px 1px #333",
     },
     titleLine: {
-      color: "black"
+      color: "black",
     },
     textCard: {
       margin: "0",
@@ -25,7 +25,7 @@ export const useStyles = () => {
     button: {
       background: color.paletteHoum.darkOrange,
       width: "7rem",
-      color: color.paletteHoum.white
+      color: color.paletteHoum.white,
     },
   };
 };

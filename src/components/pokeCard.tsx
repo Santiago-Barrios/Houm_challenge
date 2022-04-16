@@ -1,9 +1,11 @@
 import { Pokemon } from "../interfaces/fetchAllPokemonResponse";
 import { useStyles } from '../shared/styles/useStyles';
+import { words } from '../shared/constants/words';
 
 export const PokeCard = (pokemon: Pokemon) => {
 
   const clases = useStyles();
+  const word = words();
 
   return (
     <div className="col mb-2">
@@ -15,14 +17,14 @@ export const PokeCard = (pokemon: Pokemon) => {
         </div>
         <div className="col-12"  >
           <div className="card-body" style={{ textAlign: "center" }}>
-            <p className="card-title" style={ clases.textCard }> Name:</p>
+            <p className="card-title" style={ clases.textCard }> { word.name }:</p>
             <p style={ clases.textCard }>
               {" "}
               <strong>{pokemon.name.toUpperCase()}</strong>{" "}
             </p>
             <p className="card-text" style={ clases.textCard }>
               {" "}
-              id: <strong> {pokemon.id} </strong>{" "}
+              { word.id }: <strong> {pokemon.id} </strong>{" "}
             </p>
           </div>
         </div>
