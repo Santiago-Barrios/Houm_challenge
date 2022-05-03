@@ -1,6 +1,6 @@
-import { Pokemon } from "../interfaces/fetchAllPokemonResponse";
-import { useStyles } from '../shared/styles/useStyles';
-import { words } from '../shared/constants/words';
+import { Pokemon } from "../../interfaces/fetchAllPokemonResponse";
+import { useStyles } from '../../shared/styles/useStyles';
+import { words } from '../../shared/constants/words';
 
 export const PokeCard = (pokemon: Pokemon) => {
 

@@ -1,13 +1,12 @@
 import { useState } from "react";
-import { Loading } from "../components/Loading";
-import { PokemonList } from "../components/PokemonList";
-import { PokeTitle } from "../components/PokeTitle";
-import { usePokemon } from "../hooks/usePokemon";
-import { Pokemon } from "../interfaces/fetchAllPokemonResponse";
-import { useStyles } from "../shared/styles/useStyles";
-import { words } from "../shared/constants/words";
+import { Loading } from "./Loading";
+import { PokemonList } from "./PokemonList";
+import { usePokemon } from "../../hooks/usePokemon";
+import { Pokemon } from "../../interfaces/fetchAllPokemonResponse";
+import { useStyles } from "../../shared/styles/useStyles";
+import { words } from "../../shared/constants/words";
 
-export const HomePage = () => {
+export const HomeScreen = () => {
   const { isLoading, pokemons } = usePokemon();
   const [currentPage, setcurrentPage] = useState(0);
   const [search, setSearch] = useState("");
@@ -48,7 +47,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <PokeTitle title={word.title} />
+      {/* <PokeTitle title={word.title} /> */}
       <input
         type="text"
         className="mt-3 mb-3 form-control"

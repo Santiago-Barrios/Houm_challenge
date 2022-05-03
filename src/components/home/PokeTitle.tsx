@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useStyles } from "../shared/styles/useStyles";
+import { useStyles } from "../../shared/styles/useStyles";
 
 interface Props {
   title: string;

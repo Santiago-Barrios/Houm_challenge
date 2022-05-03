@@ -1,4 +1,4 @@
-import { Pokemon } from "../interfaces/fetchAllPokemonResponse";
+import { Pokemon } from "../../interfaces/fetchAllPokemonResponse";
 import { PokeCard } from "./pokeCard";
 import { FC } from "react";
 

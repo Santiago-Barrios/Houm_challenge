@@ -27,5 +27,14 @@ export const useStyles = () => {
       width: "7rem",
       color: color.paletteHoum.white,
     },
+    navbar: {
+      background: color.paletteHoum.cantaloupe,
+    },
+    navbarLink: {
+      color: "black"
+    },
+    navbarLinkActive: {
+      color: color.paletteHoum.ligthnessOrange
+    }
   };
 };

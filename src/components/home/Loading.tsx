@@ -1,4 +1,4 @@
-import { words } from '../shared/constants/words';
+import { words } from '../../shared/constants/words';
 
 export const Loading = () => {
 
